@@ -30,10 +30,20 @@ iframe {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
+  scrollbar-width: none;
   width: 35%;
 }
-.travelDivText{
+
+.travelDivText {
   width: 30%;
+}
+
+.iframeGridDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -46,13 +56,15 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-  .travelDivText{
+
+  .travelDivText {
     width: 100%;
   }
+
   .travelDiv img,
   .travelDiv video {
-    height: 273px;
-    width: auto;
+    height: auto;
+    width: 50%;
     aspect-ratio: 9/16;
   }
 
@@ -65,6 +77,15 @@ iframe {
     width: 100%;
   }
 
+  .iframeGridDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    
+  }
 }
 
 :root {
