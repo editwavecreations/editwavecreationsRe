@@ -25,18 +25,17 @@ iframe {
   aspect-ratio: 9/16;
 }
 
-.left,
-.right {
+.left {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
   overflow-x: auto;
   scrollbar-width: none;
-  width: 35%;
+  width: 50%; //make this 35% each when right is added */
 }
 
-.travelDivText {
-  width: 30%;
-}
+/* .travelDivText {
+  width: 50%;
+} */
 
 .iframeGridDiv {
   display: flex;
@@ -47,6 +46,11 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  #shorts {
+    height: 500px;
+    width: auto;
+    aspect-ratio: 9/16;
+  }
   .iframeGrid {
     height: 182px;
     width: auto;
@@ -73,16 +77,14 @@ iframe {
     overflow: hidden;
   }
 
-  .right {
+  /* .right {
     width: 100%;
-  }
+  } */
 
   .iframeGridDiv {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
     overflow-x: auto;
     
   }
