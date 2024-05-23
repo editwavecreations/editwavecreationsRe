@@ -7,7 +7,7 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-#shorts {
+.shortVidDiv iframe, #shorts {
   height: 600px;
   width: auto;
   aspect-ratio: 9/16;
@@ -41,12 +41,26 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  #shorts {
+.softwares{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}.softwares img{
+  width: 100px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 990px) {
+  .softwares img{
+    width: 50px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .shortVidDiv iframe, #shorts {
     height: 500px;
     width: auto;
     aspect-ratio: 9/16;
