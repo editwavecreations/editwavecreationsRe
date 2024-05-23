@@ -1,7 +1,32 @@
 
 //
 // Scripts
-// 
+//
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all video elements on the page
+    const videos = document.querySelectorAll('video');
+    
+    // Add a click event listener to each video
+    videos.forEach(video => {
+        video.addEventListener('click', function() {
+            // Toggle the muted property
+            this.muted = !this.muted;
+            
+            if (!this.muted) {
+                // Mute all other videos
+                videos.forEach(v => {
+                    if (v !== this) {
+                        v.muted = true;
+                    }
+                });
+            }
+        });
+    });
+});
+
+
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const leftDiv = document.querySelector('.left');
