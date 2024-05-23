@@ -11,6 +11,7 @@ iframe {
   height: 600px;
   width: auto;
   aspect-ratio: 9/16;
+  pointer-events: none;
 }
 
 .iframeGrid {
@@ -64,6 +65,7 @@ iframe {
     height: 500px;
     width: auto;
     aspect-ratio: 9/16;
+    pointer-events: none;
   }
   .iframeGrid {
     height: 182px;
@@ -13044,7 +13046,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 3rem 0;
 }
 
 .projects-section .featured-text .featured-textR {
@@ -13070,7 +13072,7 @@ body {
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
