@@ -7,11 +7,11 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-.shortVidDiv iframe, #shorts {
+.shortVidDiv iframe,
+#shorts {
   height: 600px;
   width: auto;
   aspect-ratio: 9/16;
-  pointer-events: none;
 }
 
 .iframeGrid {
@@ -44,29 +44,37 @@ iframe {
   gap: 10px;
 }
 
-.softwares{
+.softwares {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-}.softwares img{
+}
+
+.softwares img {
   width: 100px;
   height: auto;
   aspect-ratio: 1/1;
 }
 
 @media (max-width: 990px) {
-  .softwares img{
+  .contactCard {
+    margin: 24px 0;
+  }
+
+  .softwares img {
     width: 50px;
     height: auto;
     aspect-ratio: 1/1;
   }
-  .shortVidDiv iframe, #shorts {
+
+  .shortVidDiv iframe,
+  #shorts {
     height: 500px;
     width: auto;
     aspect-ratio: 9/16;
-    pointer-events: none;
   }
+
   .iframeGrid {
     height: 182px;
     width: auto;
@@ -102,7 +110,7 @@ iframe {
     flex-wrap: nowrap;
     gap: 10px;
     overflow-x: auto;
-    
+
   }
 }
 
