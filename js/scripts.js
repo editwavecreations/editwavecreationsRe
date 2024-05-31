@@ -4,38 +4,38 @@
 //
 
 // script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const leftDiv = document.querySelector('.left');
-    const rightDiv = document.querySelector('.right');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const leftDiv = document.querySelector('.left');
+//     const rightDiv = document.querySelector('.right');
 
-    leftDiv.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        leftDiv.scrollBy({
-            left: event.deltaY,
+//     leftDiv.addEventListener('wheel', (event) => {
+//         event.preventDefault();
+//         leftDiv.scrollBy({
+//             left: event.deltaY,
 
-        });
-    });
+//         });
+//     });
 
-    rightDiv.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        rightDiv.scrollBy({
-            left: event.deltaY,
+//     rightDiv.addEventListener('wheel', (event) => {
+//         event.preventDefault();
+//         rightDiv.scrollBy({
+//             left: event.deltaY,
 
-        });
-    });
-});
+//         });
+//     });
+// });
 
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const shortVidDivContainer = document.querySelector('.col-xl-8.col-lg-7');
+// // script.js
+// document.addEventListener('DOMContentLoaded', () => {
+//     const shortVidDivContainer = document.querySelector('.col-xl-8.col-lg-7');
 
-    function handleScroll(event) {
-        event.preventDefault(); // Prevent default scroll behavior
-        event.currentTarget.scrollLeft += event.deltaY; // Horizontal scroll based on vertical scroll input
-    }
+//     function handleScroll(event) {
+//         event.preventDefault(); // Prevent default scroll behavior
+//         event.currentTarget.scrollLeft += event.deltaY; // Horizontal scroll based on vertical scroll input
+//     }
 
-    shortVidDivContainer.addEventListener('wheel', handleScroll); // Listen for wheel event on shortVidDiv container
-});
+//     shortVidDivContainer.addEventListener('wheel', handleScroll); // Listen for wheel event on shortVidDiv container
+// });
 
 
 window.addEventListener('DOMContentLoaded', event => {
